@@ -38,11 +38,13 @@ export default class BestflixAddComment extends Component {
           />
           <label>Comment</label>
           <input
+            className="inputComment"
             type="text"
             name="comment"
             value={this.state.comment}
             onChange={this.updateField}
           />
+
           <button type="submit">Submit</button>
         </form>
       </div>

@@ -51,7 +51,7 @@ export default class BestflixDetail extends Component {
           <img src={imgUrl} />
           <p>{overview}</p>
           <BestflixAddComment submitNewComment={this.submitNewComment} />
-          <p>Comments:</p>
+          <h3>Comments:</h3>
           {this.state.comments !== [] && commentsHTML}
         </div>
       );
