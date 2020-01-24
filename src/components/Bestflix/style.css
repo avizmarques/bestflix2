@@ -14,3 +14,8 @@ img {
   justify-items: stretch;
   grid-gap: 30px;
 }
+
+.detail {
+  width: 80%;
+  margin: 0 auto;
+}

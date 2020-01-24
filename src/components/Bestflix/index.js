@@ -16,7 +16,6 @@ export default class Bestflix extends Component {
       id: movie.id,
       title: movie.title,
       year: movie.release_date.substring(0, 4),
-      overview: movie.overview,
       imgUrl: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
       votes: 0
     }));
