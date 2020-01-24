@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import BestflixAddComment from "./BestflixAddComment";
 
 export default class BestflixDetail extends Component {
   state = {
-    movie: null
+    movie: null,
+    comments: []
   };
 
   componentDidMount = async () => {
@@ -23,7 +25,23 @@ export default class BestflixDetail extends Component {
     return this.setState({ movie });
   };
 
+  submitNewComment = (name, comment) => {
+    return this.setState({
+      comments: [
+        ...this.state.comments,
+        { name, comment, key: Math.trunc(Math.random() * 1000) }
+      ]
+    });
+  };
+
   render() {
+    const commentsHTML = this.state.comments.map(comment => (
+      <div>
+        <p>Name: {comment.name}</p>
+        <p>Comment: {comment.comment}</p>
+      </div>
+    ));
+
     if (this.state.movie) {
       const { title, year, imgUrl, overview } = this.state.movie;
       return (
@@ -32,6 +50,9 @@ export default class BestflixDetail extends Component {
           <h2>{year}</h2>
           <img src={imgUrl} />
           <p>{overview}</p>
+          <BestflixAddComment submitNewComment={this.submitNewComment} />
+          <p>Comments:</p>
+          {this.state.comments !== [] && commentsHTML}
         </div>
       );
     } else {
