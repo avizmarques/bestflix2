@@ -6,7 +6,7 @@ export default class Homepage extends Component {
     return (
       <div>
         <h1>Movies and chill</h1>
-        <Link to="/batflix">Batflix</Link>
+        <Link to="/batflix">Batflix</Link> |{" "}
         <Link to="/bestflix">Bestflix</Link>
       </div>
     );
