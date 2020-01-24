@@ -1,0 +1,43 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* * {
+    text-align: center;
+  }
+  img {
+    width: 200px;
+  }
+  .cards {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    grid-gap: 30px;
+  }
+
+  .cardImage {
+      display: grid;
+  } */
+p, ul, li {
+  font-size: 0.75rem;
+}
+
+li {
+    margin: 0 auto;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+.card {
+  display: inline-block;
+}
+
+img {
+  max-width: 200px;
+}
