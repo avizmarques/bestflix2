@@ -1,0 +1,16 @@
+* {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
+
+.cardContainer {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+  grid-gap: 30px;
+}
