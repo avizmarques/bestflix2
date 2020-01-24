@@ -1,0 +1,22 @@
+* {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+img {
+  width: 200px;
+}
+
+.cardContainer {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+  grid-gap: 30px;
+}
+
+.detail {
+  width: 80%;
+  margin: 0 auto;
+}
